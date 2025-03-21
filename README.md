@@ -1,5 +1,7 @@
 # Demo-Repository
-## For learning Git
+## For Learning Git
+### Reference
+[Git Tutorial Video](https://www.youtube.com/watch?v=RGOj5yH7evk)
 
 # Git and GitHub Overview
 
@@ -10,7 +12,7 @@ Git is a version control system (VCS) that helps developers track changes in the
 - **Usage**: Tracks changes in files, allows branching and merging, enables collaboration
 - **Installation**: Needs to be installed on your local machine
 
-### Commands
+### Common Commands
 - `git init` → Initialize a repository
 - `git add .` → Stage changes
 - `git commit -m "Message"` → Commit changes
@@ -25,7 +27,7 @@ GitHub is a cloud-based platform that provides remote hosting for Git repositori
 - **Usage**: Stores Git repositories online, provides collaboration tools like pull requests, issues, and actions
 - **URL**: [https://github.com](https://github.com)
 
-### Features
+### Key Features
 - Public & Private Repositories
 - Pull Requests & Code Reviews
 - Issues & Project Management
@@ -36,19 +38,28 @@ GitHub is a cloud-based platform that provides remote hosting for Git repositori
 ## Git Commands
 
 ```bash
-
-### Initialize a new Git repository
-
+# Initialize a new Git repository
 git init
 
-### Check the status of the repository
+# Check the status of the repository
 git status
 
-### Add all changes to the staging area
+# Add all changes to the staging area
 git add .
 
-### Push changes to the remote repository
+# Commit changes with a message
+git commit -m "Your commit message"
+
+# Push changes to the remote repository
 git push
 
-### Push changes to the master branch of the remote repository
+# Push changes to the master branch of the remote repository
 git push origin master
+
+# Set up an empty repository and connect it as remote
+git init
+# Copy the HTTP link of the empty repository
+git remote add origin <repository-link>
+
+
+```
