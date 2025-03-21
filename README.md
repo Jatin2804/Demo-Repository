@@ -35,8 +35,10 @@ GitHub is a cloud-based platform that provides remote hosting for Git repositori
 
 ## Git Commands
 
-### Initialize a new Git repository
 ```bash
+
+### Initialize a new Git repository
+
 git init
 
 ### Check the status of the repository
