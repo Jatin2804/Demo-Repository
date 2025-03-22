@@ -65,3 +65,108 @@ git remote add origin <repository-link>
 ```
 
 # Feature 2 can be added here
+# This is new feature adding branched
+### Git Branching
+
+Branching in Git allows you to work on different features or fixes independently without affecting the main codebase. It is a powerful feature for managing parallel development.
+
+#### Example Workflow
+
+```bash
+# List all branches
+git branch
+
+# Create and switch to a new branch named 'feature1'
+git checkout -b feature1
+Switched to a new branch 'feature1'
+
+# Verify the current branch
+git branch
+* feature1
+    main
+```
+### Git Log
+
+The `git log` command is used to view the commit history of a repository. It shows details like commit hash, author, date, and commit message.
+
+#### Example Usage
+
+```bash
+# View the commit history
+git log
+
+# View a simplified commit history
+git log --oneline
+```
+
+---
+
+### Git Checkout
+
+The `git checkout` command is used to switch between branches or restore files in your working directory.
+
+#### Example Usage
+
+```bash
+# Switch to an existing branch
+git checkout <branch-name>
+
+# Restore a specific file to its last committed state
+git checkout -- <file-name>
+```
+# This is new feature adding branched
+### Git Branching
+
+Branching in Git allows you to work on different features or fixes independently without affecting the main codebase. It is a powerful feature for managing parallel development.
+
+#### Example Workflow
+
+```bash
+# List all branches
+git branch
+
+# Create and switch to a new branch named 'feature1'
+git checkout -b feature1
+Switched to a new branch 'feature1'
+
+# Verify the current branch
+git branch
+* feature1
+    main
+```
+### Git Log
+
+The `git log` command is used to view the commit history of a repository. It shows details like commit hash, author, date, and commit message.
+
+#### Example Usage
+
+```bash
+# View the commit history
+git log
+
+# View a simplified commit history
+git log --oneline
+```
+
+---
+
+### Git Checkout
+
+The `git checkout` command is used to switch between branches or restore files in your working directory.
+
+#### Example Usage
+
+```bash
+# Switch to an existing branch
+git checkout <branch-name>
+
+# Restore a specific file to its last committed state
+git checkout -- <file-name>
+```
+
+
+#### Visual Representation
+![Git Branching](branching.png)
+
+This example demonstrates how to create a new branch, switch to it, and verify the active branch.
+
