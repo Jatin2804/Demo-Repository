@@ -64,4 +64,4 @@ git remote add origin <repository-link>
 
 ```
 ### Git Branching
-![alt text](image.png)![branching](image-1.png)
+![Branching](image.png)
