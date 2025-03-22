@@ -122,3 +122,81 @@ git checkout -- <file-name>
 
 This example demonstrates how to create a new branch, switch to it, and verify the active branch.
 
+
+### Git Diff
+
+The `git diff` command is used to view the differences between changes in your working directory, staging area, or between commits.
+
+#### Example Usage
+
+```bash
+# Show changes in the working directory that are not staged
+git diff
+
+# Show changes between the staging area and the last commit
+git diff --staged
+
+# Show changes between two commits
+git diff <commit1> <commit2>
+```
+
+---
+
+### Git Push with Upstream
+
+The `git push -u origin <branch-name>` command is used to push a branch to the remote repository and set it as the upstream branch for future pushes.
+
+#### Example Usage
+
+```bash
+# Push the current branch to the remote repository and set upstream
+git push -u origin <branch-name>
+```
+
+---
+
+### Git Merge
+
+The `git merge` command is used to combine changes from one branch into another. Typically, you merge a feature branch into the main branch after completing the feature.
+
+#### Example Usage
+
+```bash
+# Merge the specified branch into the current branch
+git merge <branch-name>
+```
+
+---
+
+### Git Branch Deletion
+
+The `git branch -d` command is used to delete a branch that has been fully merged. Use `git branch -D` to force delete a branch that hasn't been merged.
+
+#### Example Usage
+
+```bash
+# Delete a branch that has been merged
+git branch -d <branch-name>
+
+# Force delete a branch that hasn't been merged
+git branch -D <branch-name>
+```
+### Git Reset
+
+The `git reset` command is used to undo changes by resetting the current branch to a specific state. It can modify the staging area and working directory depending on the options used.
+
+#### Example Usage
+
+```bash
+# Reset the staging area to match the last commit
+git reset
+
+# Undo the last commit but keep the changes in the working directory
+git reset HEAD~1
+
+# Reset to a specific commit and keep changes in the working directory
+git reset <commit-hash>
+
+# Reset to a specific commit and discard all changes in the working directory
+git reset --hard <commit-hash>
+```
