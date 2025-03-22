@@ -63,3 +63,18 @@ git remote add origin <repository-link>
 
 
 ```
+### Git Branching
+
+To add an image in markdown, use the following syntax:
+
+```markdown
+![Alt Text](image-url)
+```
+
+For example:
+
+```markdown
+![Git Logo](https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png)
+```
+
+This will display the Git logo in your markdown file.
