@@ -63,7 +63,7 @@ git remote add origin <repository-link>
 
 
 ```
-# This is new feature 
+# This is new feature adding branched
 ### Git Branching
 
 Branching in Git allows you to work on different features or fixes independently without affecting the main codebase. It is a powerful feature for managing parallel development.
