@@ -315,3 +315,62 @@ git rebase -i <branch-name>
 
 ![Image1](image.png)
 ![Image2](image-1.png)
+
+
+### Git Stash
+
+The `git stash` command is used to temporarily save changes in your working directory and staging area without committing them. This is useful when you need to switch branches or work on something else without losing your current progress.
+
+#### Common Commands
+
+```bash
+# Save modified and staged changes
+git stash
+
+# List stack-order of stashed file changes
+git stash list
+
+# Apply the changes from the top of the stash stack and remove it
+git stash pop
+
+# Discard the changes from the top of the stash stack
+git stash drop
+```
+
+---
+
+### Git Log and Diff
+
+#### Compare Branches
+
+```bash
+# Show the commits on branchA that are not on branchB
+git log branchB..branchA
+```
+
+#### Track File Changes Across Renames
+
+```bash
+# Show the commits that changed a file, even across renames
+git log --follow [file]
+```
+
+#### Compare Differences Between Branches
+
+```bash
+# Show the diff of what is in branchA that is not in branchB
+git diff branchB...branchA
+```
+
+---
+
+### Git Show
+
+The `git show` command is used to display information about any Git object in a human-readable format, such as commits, tags, or blobs.
+
+#### Example Usage
+
+```bash
+# Show details of a specific commit or object
+git show [SHA]
+```
