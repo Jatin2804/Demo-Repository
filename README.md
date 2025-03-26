@@ -315,5 +315,5 @@ git rebase -i <branch-name>
 
 # Important cmnds
 
-![alt text](image.png)
-![alt text](image-1.png)
+![Image1](image.png)
+![Image2](image-1.png)
