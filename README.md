@@ -11,6 +11,36 @@ Git is a version control system (VCS) that helps developers track changes in the
 - **Type**: Distributed Version Control System (DVCS)
 - **Usage**: Tracks changes in files, allows branching and merging, enables collaboration
 - **Installation**: Needs to be installed on your local machine
+  
+### Git Configuration
+
+After installing Git, you can configure it with your user information and verify the installation.
+
+#### Check Git Version
+
+```bash
+# Check the installed Git version
+git --version
+```
+
+#### Set User Information
+
+```bash
+# Set your name
+git config --global user.name "Your Name"
+
+# Set your email
+git config --global user.email "youremail@domain.com"
+```
+
+#### View Configuration
+
+You can see all the configuration items that have been set by typing:
+
+```bash
+# List all Git configuration settings
+git config --list
+```
 
 ### Common Commands
 - `git init` → Initialize a repository
@@ -70,6 +100,46 @@ git remote add origin <repository-link>
 ### Git Branching
 
 Branching in Git allows you to work on different features or fixes independently without affecting the main codebase. It is a powerful feature for managing parallel development.
+
+
+A branch in Git is a lightweight movable pointer to a commit. It allows you to work on different features or fixes independently without affecting the main codebase. The default branch in most repositories is called `main` or `master`.
+
+### How to Change the Default Branch?
+
+To change the default branch in a repository:
+
+1. Go to your repository on GitHub.
+2. Navigate to **Settings** > **Branches**.
+3. Under the "Default branch" section, click **Change default branch**.
+4. Select the branch you want to set as the default and click **Update**.
+
+### How to Create a Branch and Checkout to a Different Branch?
+
+To create a new branch and switch to it:
+
+```bash
+# Create a new branch named 'feature1'
+git branch feature1
+
+# Switch to the newly created branch
+git checkout feature1
+```
+
+Alternatively, you can combine the two steps into one:
+
+```bash
+# Create and switch to a new branch named 'feature1'
+git checkout -b feature1
+```
+
+To list all branches and verify the current branch:
+
+```bash
+# List all branches
+git branch
+
+# The current branch will be highlighted with an asterisk (*)
+```
 
 #### Example Workflow
 
@@ -200,3 +270,46 @@ git reset <commit-hash>
 # Reset to a specific commit and discard all changes in the working directory
 git reset --hard <commit-hash>
 ```
+
+### Adding and Removing Remote Origin
+
+#### Add a Remote Origin
+
+To add a remote origin to your local repository, use the `git remote add` command:
+
+```bash
+# Add a remote origin with the specified repository URL
+git remote add origin <repository-url>
+```
+
+#### Remove a Remote Origin
+
+To remove an existing remote origin, use the `git remote remove` command:
+
+```bash
+# Remove the remote origin
+git remote remove origin
+```
+
+```bash
+# List all configured remotes
+git remote -v
+```
+### Git Rebase
+
+The `git rebase` command is used to integrate changes from one branch into another by moving or "rebasing" the commits of the current branch onto the tip of another branch. This creates a linear commit history, making it cleaner and easier to read.
+
+#### Example Usage
+
+```bash
+# Rebase the current branch onto the specified branch
+git rebase <branch-name>
+
+# Rebase interactively to edit, reorder, or squash commits
+git rebase -i <branch-name>
+```
+
+#### Example Workflow
+
+```bash
+# Switch to the feature branch
