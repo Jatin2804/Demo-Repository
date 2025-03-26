@@ -312,4 +312,8 @@ git rebase -i <branch-name>
 #### Example Workflow
 
 ```bash
-# Switch to the feature branch
+
+# Important cmnds
+
+![alt text](image.png)
+![alt text](image-1.png)
