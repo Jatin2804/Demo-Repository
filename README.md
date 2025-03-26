@@ -309,9 +309,7 @@ git rebase <branch-name>
 git rebase -i <branch-name>
 ```
 
-#### Example Workflow
 
-```bash
 
 # Important cmnds
 
