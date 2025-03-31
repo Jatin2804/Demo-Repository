@@ -374,3 +374,42 @@ The `git show` command is used to display information about any Git object in a 
 # Show details of a specific commit or object
 git show [SHA]
 ```
+### Git Merge with No Fast-Forward
+
+The following command demonstrates how to merge a branch with the `--no-ff` option:
+
+```bash
+git merge release-v1.0.0 --no-ff -m "Merge release v1.0.0 into development"
+```
+
+#### Breaking It Down:
+
+1. **`git merge release-v1.0.0`**  
+    - Merges the `release-v1.0.0` branch into the current branch (which should be `development` when running this command).  
+    - Ensures that all changes from `release-v1.0.0` are integrated into `development`.
+
+2. **`--no-ff` (No Fast-Forward Merge)**  
+    - Forces Git to create a merge commit instead of fast-forwarding.  
+    - This keeps the history clear, showing that a release branch was used and merged separately.  
+    - Without `--no-ff`, Git might just move the `development` branch pointer to `release-v1.0.0` without a separate commit, losing the clear branch history.
+
+3. **`-m "Merge release v1.0.0 into development"`**  
+    - Provides a meaningful commit message for the merge.  
+    - Without this, Git might open an editor for you to enter a message manually.
+
+
+git tag -a v1.0.0 -m "Release version 1.0.0" 
+
+###Create a Version Tag (Replace v1.0.0 with your version number)
+
+git tag -a v1.0.0 -m "Release version 1.0.0"
+Push the Tag to Remote
+
+
+git push origin v1.0.0
+Verify the Tag (Optional)
+
+
+
+git tag
+git show v1.0.0
